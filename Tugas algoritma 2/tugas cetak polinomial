@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  2 20:33:28 2021
+
+@author: Rafli_Riansyah
+NAMA : Rafli Riansyah\
+NIM : 064002100028
+
+"""
+
+def powerBasis(p):
+    for x in range(p):
+        print(f"x^{p} +", end=" ")
+        p -= 1
+        if p == 1:
+            print("x + 1")
+            break
+        
+n = int(input("masukkan angkanya : "))
+powerBasis(n)
