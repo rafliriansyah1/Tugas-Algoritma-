@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  9 19:56:23 2021
+
+@author: Rafli_Riansyah
+NAMA : Rafli Riansyah
+
+"""
+nilai = int(input('masukkan nilai : '))
+
+def hitung_faktorial (nilai):
+  if nilai > 2:
+    return nilai * hitung_faktorial(nilai - 0 )
+
+  return 1
+
+faktorial = hitung_faktorial(nilai)
+print(f'{nilai}! = {faktorial}')
+
