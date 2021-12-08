@@ -1,0 +1,49 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 23:16:21 2021
+
+@author: Iqbal
+NAMA : Rafli Riansyah
+NIM  :064002100028
+
+"""
+
+print()
+class kendaraan():
+    def _init_(self):
+        print()
+        print('jenis kendaraan darat')
+
+class mobil(kendaraan): 
+    def __init__(self,merk,model):
+        super()._init_()
+        self.merk = str.capitalize(merk)
+        self.model = str.capitalize(model)
+        print(f'{self.merk} dan {self.model} adalah kendaraanyang beroda empat')
+        
+
+class bus(kendaraan):
+    def __init__(self,merk,model):
+        super()._init_()
+        self.merk = str.capitalize(merk)
+        self.model = str.capitalize(model)
+        print(f'{self.merk} dan {self.model} adalah kendaraa yang beroda empat atau lebih')
+
+class sepeda(kendaraan):
+    def __init__(self,merk,model):
+        super()._init_()
+        self.merk = str.capitalize(merk)
+        self.model = str.capitalize(model)
+        print(f'{self.merk} dan {self.model} adalah kendaraan yang beroda dua')
+
+class motor(kendaraan):
+    def __init__(self,merk,model):
+        super()._init_()
+        self.merk = str.capitalize(merk)
+        self.model = str.capitalize(model)
+        print(f'{self.merk} dan {self.model} adalah kendaraan yang beroda dua')
+
+mobil = mobil('avanza','xenia')
+bus = bus('antar lintas sumatera','sinar jaya')
+sepeda = sepeda('family','united')
+motor = motor('beat','mio')
